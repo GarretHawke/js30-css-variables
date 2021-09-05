@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(96, 110, 117, 0.911);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+.highlight {
+  text-transform: uppercase;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+input {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 10px;
+}
+
+img {
+  max-height: 600px;
+  max-width: 600px;
+}
