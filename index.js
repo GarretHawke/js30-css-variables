@@ -5,5 +5,7 @@ function handleUpdate() {
   document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 }
 
-CONTROLS.forEach(item => item.addEventListener('change', handleUpdate));
-CONTROLS.forEach(item => item.addEventListener('mousemove', handleUpdate));
+CONTROLS.forEach(item => item.addEventListener('mousedown', () => {
+  item.addEventListener('mousemove', handleUpdate);
+  item.addEventListener('change', handleUpdate);
+}));
